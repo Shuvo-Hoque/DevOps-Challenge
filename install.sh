@@ -7,12 +7,13 @@ sudo apt-get install php7.4-mbstring php7.4-mysql php7.4-xml php7.4-curl php7.4-
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
-cd DevOps-Challenge
+cd DevOps-Challenge/app/
 composer install
 cp .env.example .env
 php artisan key:generate
 
 #Docker install
+cd ..
 cd ..
 sudo -i
 sudo apt-get install \
@@ -36,5 +37,5 @@ sudo usermod -aG docker ubuntu
 sudo su ubuntu
 sudo service apache2 stop -y
 sudo apt remove apache2 -y
-cd DevOps-Challenge
+cd DevOps-Challenge/app/
 docker-compose up -d --build
