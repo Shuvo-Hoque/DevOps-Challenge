@@ -1,0 +1,14 @@
+#User data
+sudo apt-get update
+sudo apt-get install git -y
+git clone https://github.com/Shuvo-Hoque/DevOps-Challenge.git
+cd DevOps-Challenge
+chmod +x install.sh install1.sh install2.sh
+./install.sh
+sudo -i
+cd /
+cd home/ubuntu/DevOps-Challenge
+./install1.sh
+sudo su ubuntu
+cd DevOps-Challenge
+./install2.sh
