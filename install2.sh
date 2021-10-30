@@ -3,5 +3,5 @@ sudo service apache2 stop -y
 sudo apt remove apache2 -y
 
 #dockerization of laravel project
-cd DevOps-Challenge/app/
+cd /home/ubuntu/DevOps-Challenge/app/
 docker-compose up -d --build

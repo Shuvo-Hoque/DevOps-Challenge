@@ -7,7 +7,7 @@ curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 cd app/
-sudo composer install
+sudo composer install -y
 cp .env.example .env
 php artisan key:generate
 cd ..
