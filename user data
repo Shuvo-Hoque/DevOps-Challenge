@@ -3,6 +3,7 @@ sudo apt-get update
 sudo apt-get install git -y
 cd /home/ubuntu
 sudo git clone https://github.com/Shuvo-Hoque/DevOps-Challenge.git
+sudo chown -R ubuntu:ubuntu DevOps-Challenge
 cd /home/ubuntu/DevOps-Challenge
 sudo chmod +x ./install.sh
 sudo chmod +x ./install1.sh
