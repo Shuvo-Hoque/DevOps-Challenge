@@ -7,7 +7,5 @@ sudo chown -R ubuntu:ubuntu DevOps-Challenge
 cd /home/ubuntu/DevOps-Challenge
 sudo chmod +x ./install.sh
 sudo chmod +x ./install1.sh
-sudo chmod +x ./install2.sh
-sudo ./install.sh
+./install.sh
 sudo ./install1.sh
-sudo ./install2.sh
