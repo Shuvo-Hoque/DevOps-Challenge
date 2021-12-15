@@ -36,7 +36,7 @@ COPY ./app /var/www/
 # import your packages and create the vendor folder
 RUN composer install
 RUN composer update
-
+sudo chmod -R 777 bootstrap/cache storage
 # Copy existing application directory permissions
 RUN chown www:www /var/www
 RUN chown -R www:www /var/www
